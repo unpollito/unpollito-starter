@@ -1,0 +1,33 @@
+{
+  "name": "unpollito-starter",
+  "private": true,
+  "scripts": {
+    "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx,.json",
+    "setup": "yarn install && yarn i",
+    "i": "lerna bootstrap",
+    "a": "lerna add",
+    "r": "lerna run --parallel r"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-json": "2.1.2",
+    "eslint-plugin-no-null": "1.0.2",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-sort-keys-fix": "1.1.1",
+    "husky": "6.0.0",
+    "lerna": "4.0.0",
+    "lint-staged": "10.5.4",
+    "prettier": "2.2.1",
+    "typescript": "4.6.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": [
+      "eslint"
+    ]
+  },
+  "dependencies": {}
+}

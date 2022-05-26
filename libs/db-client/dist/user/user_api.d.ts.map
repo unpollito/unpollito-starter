@@ -1,0 +1,1 @@
+{"version":3,"file":"user_api.d.ts","sourceRoot":"","sources":["../../src/user/user_api.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,MAAM,kBAAkB,CAAC;AAwBxC,eAAO,MAAM,OAAO;uBApBY,IAAI,KAAG,QAAQ,IAAI,CAAC;4BAIf,MAAM,KAAG,QAAQ,IAAI,GAAG,SAAS,CAAC;sBAKxC,MAAM,KAAG,QAAQ,IAAI,GAAG,SAAS,CAAC;uBAKjC,IAAI,KAAG,QAAQ,IAAI,CAAC;CAWnD,CAAC"}

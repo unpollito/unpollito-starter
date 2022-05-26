@@ -6,7 +6,6 @@
     "setup": "yarn install && yarn i",
     "i": "lerna bootstrap",
     "a": "lerna add",
-    "r": "lerna run --parallel r",
     "prepare": "husky install"
   },
   "devDependencies": {

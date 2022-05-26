@@ -1,12 +1,13 @@
 import "dotenv/config";
 import express from "express";
+import { db } from "@unpollito/db-client";
 
 const app = express();
 
-app.get('/', function (req, res) {
+app.get("/", async function (req, res) {
   console.log(req);
-  res.send('Hello World')
+  await db.user.getUserById("foo");
+  res.send("Hello World");
 });
 
 app.listen(process.env.PORT);
-

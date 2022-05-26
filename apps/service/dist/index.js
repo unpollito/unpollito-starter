@@ -5,10 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 require("dotenv/config");
 const express_1 = __importDefault(require("express"));
+const db_client_1 = require("@unpollito/db-client");
 const app = (0, express_1.default)();
-app.get('/', function (req, res) {
+app.get("/", async function (req, res) {
     console.log(req);
-    res.send('Hello World');
+    await db_client_1.db.user.getUserById("foo");
+    res.send("Hello World");
 });
 app.listen(process.env.PORT);
 //# sourceMappingURL=index.js.map
